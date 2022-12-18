@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+form label,
+form > div {
+  display: flex;
+  gap: 0.5em;
+}
+
+form label span:first-child {
+  display: inline-block;
+  width: 10ch;
+}
+
+input[data-invalid]:invalid {
+  background: #ffd6d6;
+  border-color: #ff0000;
+}
+
+#app > :last-child {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
